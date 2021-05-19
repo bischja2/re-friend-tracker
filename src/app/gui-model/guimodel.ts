@@ -9,6 +9,32 @@ export class GuiModel {
             "title": "Bischof Jan Friend Tracker",
             "formList": [
                 {
+                    "id": "ActivityForm",
+                    "title": "Activity",
+                    "url": "/activity",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "ActivityName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "GroupForm",
                     "title": "Group",
                     "url": "/group",
@@ -170,10 +196,20 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "NewActivity",
-                            "icon": "fa-weixin",
+                            "icon": "fa-bullhorn",
                             "color": "green",
                             "form": {
-                                "form": "GroupForm"
+                                "form": "ActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "ActivityForm"
                             }
                         }
                     ]
