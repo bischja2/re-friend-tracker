@@ -162,6 +162,23 @@ export class GuiModel {
             ],
             "pageList": [
                 {
+                    "id": "activitiespage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-weixin",
+                            "color": "green",
+                            "form": {
+                                "form": "GroupForm"
+                            }
+                        }
+                    ]
+                },
+                {
                     "id": "mainmenu",
                     "name": "MainMenu",
                     "elementList": [
@@ -186,6 +203,14 @@ export class GuiModel {
                             "color": "red",
                             "page": "groupspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Activities",
+                            "icon": "fa-bullhorn",
+                            "color": "emerald",
+                            "page": "activitiespage",
+                        },
+
                     ]
                 },
                 {
