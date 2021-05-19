@@ -188,33 +188,6 @@ export class GuiModel {
             ],
             "pageList": [
                 {
-                    "id": "activitiespage",
-                    "elementList": [
-                        {
-                            "type": "backbutton",
-                        },
-                        {
-                            "type": "newButton",
-                            "name": "NewActivity",
-                            "icon": "fa-bullhorn",
-                            "color": "green",
-                            "form": {
-                                "form": "ActivityForm"
-                            }
-                        },
-                        {
-                            "type": "list",
-                            "icon": "fa-weixin",
-                            "color": "wisteria",
-                            "search": true,
-                            "url": "/activity",
-                            "form": {
-                                "form": "ActivityForm"
-                            }
-                        }
-                    ]
-                },
-                {
                     "id": "mainmenu",
                     "name": "MainMenu",
                     "elementList": [
@@ -247,6 +220,33 @@ export class GuiModel {
                             "page": "activitiespage",
                         },
 
+                    ]
+                },
+                {
+                    "id": "activitiespage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-bullhorn",
+                            "color": "green",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-bullhorn",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/activity",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        }
                     ]
                 },
                 {
